@@ -1,11 +1,3 @@
 name = "my-event-frontend"
-
-account_id = "163d842846be549bf8a5115962258ac6"
-workers_dev = true
-compatibility_flags = []
-
-[build]
-command = "npm run pages"
-
-[site]
-bucket = ".vercel/output/static"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
