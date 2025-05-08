@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-   "dev": "next dev --turbopack",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint",
-  "pages:build": "npx next-on-pages",
-  "pages:deploy": "npx wrangler pages deploy .vercel/output/static --project-name=my-event-frontend"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "i18next": "^25.1.1",
