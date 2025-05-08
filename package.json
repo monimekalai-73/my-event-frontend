@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-   "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+   "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "pages:build": "npx next-on-pages",
+  "pages:deploy": "npx wrangler pages deploy .vercel/output/static --project-name=<my-event-frontend>"
   },
   "dependencies": {
     "i18next": "^25.1.1",
@@ -17,6 +19,7 @@
     "react-i18next": "^15.5.1"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.12",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

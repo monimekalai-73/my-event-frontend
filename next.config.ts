@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  //output: "export", // ✅ THIS is the key fix
+  outputStandalone: true, 
 };
 
 export default nextConfig;
